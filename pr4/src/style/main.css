@@ -94,7 +94,7 @@ li {
 
 .spreadsheet-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .contacts {
   display: flex;
