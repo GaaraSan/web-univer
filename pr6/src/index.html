@@ -80,36 +80,42 @@
             /></a>
           </div>
         </div>
-        <div class="feedback">
-          <div class="feedback-left">
-            <input
-              type="text"
-              placeholder="Ім’я:"
-              class="feedback-name"
-              name="name"
-            />
-            <input
-              type="email"
-              placeholder="Електронна пошта:"
-              class="feedback-email"
-              name="email"
-            />
-            <input
-              type="tel"
-              placeholder="Телефон:"
-              class="feedback-tel"
-              name="tel"
-            />
-            <button class="feedback-send-button">Надіслати</button>
-          </div>
-          <div class="feedback-right">
-            <textarea
-              name="message"
-              class="feedback-message"
-              placeholder="Текст повідомлення:"
-            ></textarea>
-          </div>
+        <div class="form">
+          <form class="feedback" id="feedbackForm">
+            <div class="feedback-left">
+              <input
+                type="text"
+                placeholder="Ім’я:"
+                class="feedback-name"
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="Електронна пошта:"
+                class="feedback-email"
+                name="email"
+              />
+              <input
+                type="tel"
+                placeholder="Телефон:"
+                class="feedback-tel"
+                name="tel"
+              />
+              <button type="submit" class="feedback-send-button">
+                Надіслати
+              </button>
+            </div>
+            <div class="feedback-right">
+              <textarea
+                name="message"
+                class="feedback-message"
+                placeholder="Текст повідомлення:"
+              ></textarea>
+            </div>
+          </form>
+          <div id="messageLength"></div>
         </div>
+
         <div class="spreadsheet-div">
           <a href="./spreadsheet.html" class="spreadsheet"
             >Я вмію створювати таблиці</a
@@ -118,5 +124,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/feedback.js"></script>
   </body>
 </html>
