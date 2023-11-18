@@ -34,5 +34,5 @@ function getQuote() {
 	return quotes[i]
 }
 
-const quote = document.querySelector('.quote')
+const quote = $('.quote')[0]
 quote.textContent = getQuote()
