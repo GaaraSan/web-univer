@@ -1,10 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-	var form = document.getElementById('feedbackForm')
-
-	form.addEventListener('submit', function (event) {
+$(document).ready(function () {
+	var form = $('#feedbackForm')
+	form.on('submit', function (event) {
 		event.preventDefault()
 
-		// Перевірка полів форми
 		var isNameValid = validateName()
 		var isEmailValid = validateEmail()
 		var isPhoneValid = validatePhone()
@@ -12,15 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		displayMessageLength(messageLength)
 	})
-	var messageInput = form.querySelector('.feedback-message')
-	messageInput.addEventListener('input', function () {
+	var messageInput = form.find('.feedback-message')
+	messageInput.on('input', function () {
 		var messageLength = validateMessageLength()
 		displayMessageLength(messageLength)
 	})
 
 	function validateName() {
-		var nameInput = form.querySelector('.feedback-name')
-		var nameValue = nameInput.value.trim()
+		var nameInput = form.find('.feedback-name')
+		var nameValue = nameInput.val().trim()
 
 		if (!/^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s]+$/.test(nameValue)) {
 			alert("Поле 'Ім’я' повинно містити тільки букви або пробіли.")
@@ -31,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function validateEmail() {
-		var emailInput = form.querySelector('.feedback-email')
-		var emailValue = emailInput.value.trim()
+		var emailInput = form.find('.feedback-email')
+		var emailValue = emailInput.val().trim()
 
 		if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
 			alert('Некоректний формат електронної пошти.')
@@ -43,8 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function validatePhone() {
-		var phoneInput = form.querySelector('.feedback-tel')
-		var phoneValue = phoneInput.value.trim()
+		var phoneInput = form.find('.feedback-tel')
+		var phoneValue = phoneInput.val().trim()
 
 		if (!/^[0-9+\-() ]+$/.test(phoneValue)) {
 			alert(
@@ -57,15 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function validateMessageLength() {
-		var messageInput = form.querySelector('.feedback-message')
-		var messageValue = messageInput.value.trim()
+		var messageInput = form.find('.feedback-message')
+		var messageValue = messageInput.val().trim()
 		var messageLength = messageValue.length
 
 		return messageLength
 	}
 
 	function displayMessageLength(length) {
-		var lengthContainer = document.getElementById('messageLength')
-		lengthContainer.textContent = 'Довжина тексту повідомлення: ' + length
+		var lengthContainer = $('#messageLength')
+		lengthContainer.text('Довжина тексту повідомлення: ' + length)
 	}
 })
