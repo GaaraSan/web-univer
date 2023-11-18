@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	form.addEventListener('submit', function (event) {
 		event.preventDefault()
 
-		// Перевірка полів форми
 		var isNameValid = validateName()
 		var isEmailValid = validateEmail()
 		var isPhoneValid = validatePhone()
