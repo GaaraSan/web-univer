@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style/main.css" rel="stylesheet" type="text/css" />
+    <title>Резюме</title>
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <div class="main-info">
+          <div class="avatar"></div>
+          <div class="main-text">
+            <h1>Бедських Артем Віталійович</h1>
+            <h2>Дата народження: 26.08.2004</h2>
+            <p>
+              <b>
+                Студент групи КНТ-113сп Національного університету «Запорізька
+                політехніка»
+              </b>
+            </p>
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <h3>Дані про освіту у зворотному хронологічному порядку:</h3>
+            <ul>
+              <li>
+                Студент групи КНТ-113сп Національного університету «Запорізька
+                політехніка»
+              </li>
+              <li>
+                Студент групи РПЗ 19 2/9 ВСП "Запорізький електротехнічний
+                фаховий коледж Національного університету "Запорізька
+                політехніка"
+              </li>
+              <li>Учень Загальноосвітньої школи І-ІІІ ступенів №96</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Інформацію про досвід роботи (якщо є):</h3>
+            <ul>
+              <li>Офіціант у закладі "Burger Zone" - 1 місяць</li>
+              <li>Енергоальянс: Кабельний завод - 3 місяці</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Професійні навички:</h3>
+            <ol>
+              <li>JavaScript</li>
+              <li>Vue</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Знання мов:</h3>
+            <ul>
+              <li>Українська</li>
+              <li>Російська</li>
+              <li>Англійська</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts">
+          <h3>Контактна інформація:</h3>
+          <p><b>email</b> - prosto.artem158@gmail.com</p>
+          <p><b>телефон</b> - +380506362829 або +380684642324</p>
+          <div class="links">
+            <a href="https://t.me/pacetick"
+              ><img src="./assets/icons8-telegram.svg" alt="telegram"
+            /></a>
+            <a href="https://www.instagram.com/btw.tyosha/"
+              ><img src="./assets/icons8-instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://github.com/GaaraSan"
+              ><img src="./assets/icons8-github.svg" alt="github"
+            /></a>
+          </div>
+        </div>
+        <div class="form">
+          <form class="feedback" id="feedbackForm">
+            <div class="feedback-left">
+              <input
+                type="text"
+                placeholder="Ім’я:"
+                class="feedback-name"
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="Електронна пошта:"
+                class="feedback-email"
+                name="email"
+              />
+              <input
+                type="tel"
+                placeholder="Телефон:"
+                class="feedback-tel"
+                name="tel"
+              />
+              <button type="submit" class="feedback-send-button">
+                Надіслати
+              </button>
+            </div>
+            <div class="feedback-right">
+              <textarea
+                name="message"
+                class="feedback-message"
+                placeholder="Текст повідомлення:"
+              ></textarea>
+            </div>
+          </form>
+          <div id="messageLength"></div>
+        </div>
+
+        <div class="spreadsheet-div">
+          <a href="./spreadsheet.html" class="spreadsheet"
+            >Я вмію створювати таблиці</a
+          >
+          <a href="./billG.html" class="spreadsheet">Білл Гейтс</a>
+        </div>
+      </div>
+    </section>
+    <script src="./js/feedback.js"></script>
+  </body>
+</html>
