@@ -1,0 +1,226 @@
+body {
+	background-color: rgba(220, 220, 220);
+}
+
+header {
+	background-color: rgba(238, 238, 238, 0.7);
+	height: 50px;
+	padding-top: 17px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.nav__list {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+.nav-hiden {
+	display: none;
+}
+.burger {
+	position: relative;
+	bottom: -47px;
+	margin-left: 15px;
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../assets/menu.png');
+}
+main {
+	display: flex;
+	height: fit-content;
+	font-size: 20px;
+}
+.main-info {
+	flex: 1;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 25px;
+}
+aside {
+	background-color: #fee2e2;
+	/* height: fit-content; */
+	max-width: 350px;
+	/* height: 100%; */
+	font-size: 20px;
+	padding: 25px;
+
+	/* position: fixed;
+    top: 35%;
+    right: 3%; */
+}
+footer {
+	background-color: rgba(238, 238, 238, 0.7);
+	height: fit-content;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 5px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.footer-link,
+.quote {
+	margin: 5px auto;
+}
+.duck {
+	height: 200px;
+	background-repeat: repeat-x;
+	background-position: top;
+	background-image: url('../assets/duck1.png');
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+ul,
+ol {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 27px;
+}
+
+.achievements-page {
+	color: #f87171;
+}
+
+.shorts {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.burger {
+		width: 24px;
+		height: 24px;
+		bottom: -35px;
+		margin-left: 10px;
+	}
+	.duck {
+		height: 50px;
+		margin-bottom: 10px;
+		background-size: 20%;
+		background-position: center;
+	}
+
+	header {
+		height: 30px;
+		padding-top: 12px;
+	}
+	main {
+		font-size: 12px;
+	}
+	.main-info {
+		padding: 15px;
+	}
+	aside {
+		max-width: 150px;
+		font-size: 12px;
+		padding: 15px;
+		position: fixed;
+		top: 17%;
+		right: 15%;
+		border-radius: 5px;
+		border: black solid 1px;
+	}
+	footer {
+		font-size: 12px;
+	}
+	.footer-link {
+		margin-top: 5px;
+	}
+	.achievements {
+		margin: 15px 0;
+	}
+	a {
+		font-size: 15px;
+	}
+	h3 {
+		margin-top: 0px;
+	}
+	.shorts {
+		display: block;
+		position: fixed;
+		background-color: #fee2e2;
+		border-radius: 5px;
+		border: black solid 1px;
+		top: 20%;
+		right: 3%;
+		width: 40px;
+		height: 40px;
+	}
+	.shorts-hiden {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+	.duck {
+		height: 150px;
+		margin-bottom: 10px;
+		background-size: 20%;
+		background-position: center;
+	}
+
+	header {
+		height: 40px;
+		padding-top: 20px;
+	}
+	main {
+		font-size: 18px;
+	}
+	.main-info {
+		padding: 25px;
+	}
+	aside {
+		max-width: 250px;
+		font-size: 18px;
+		padding: 15px;
+		position: fixed;
+		bottom: 10%;
+		right: 10%;
+		border-radius: 5px;
+		border: black solid 1px;
+	}
+	footer {
+		height: 40px;
+	}
+	.footer-link {
+		margin-top: 5px;
+	}
+	.achievements {
+		margin: 15px 0;
+	}
+	a {
+		font-size: 20px;
+	}
+	h3 {
+		margin-top: 0px;
+	}
+	.shorts {
+		display: block;
+		position: fixed;
+		background-color: #fee2e2;
+		border-radius: 5px;
+		border: black solid 1px;
+		bottom: 10%;
+		right: 3%;
+		width: 45px;
+		height: 45px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.shorts-hiden {
+		display: none;
+	}
+}
