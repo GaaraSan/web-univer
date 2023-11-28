@@ -1,0 +1,90 @@
+@import '../../assets/scss/general.scss';
+
+.products-item {
+	max-width: 280px;
+
+	&-image {
+		padding: 0 5px 0 15px;
+		max-width: 260px;
+	}
+
+	&-title {
+		margin-top: 10px;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.01em;
+		@include text-black;
+	}
+
+	&-settings-wrapper {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 5px;
+		padding: 7px 5px;
+		background: $light-gray;
+		border-radius: 10px;
+	}
+
+	&-bottom-wrapper {
+		margin-top: 17px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-price {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 27px;
+		letter-spacing: 0.015em;
+		color: $black;
+	}
+
+	&-add {
+		transition: 0.4s all;
+		position: relative;
+		min-height: 40px;
+		padding: 0 18px;
+		display: flex;
+		align-items: center;
+		column-gap: 7px;
+
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 19px;
+		color: $accent;
+
+		z-index: 10;
+
+		&-icon {
+			width: 12px;
+			fill: $accent;
+		}
+
+		&:hover {
+			transition: 0.4s all;
+			background-color: $accent;
+			color: $white;
+			border: none;
+
+			.products-item-add-icon {
+				fill: $white;
+			}
+		}
+
+		&-added {
+			color: #54c213;
+			border-color: #40970d;
+
+			.products-item-add-icon {
+				fill: #54c213;
+			}
+		}
+	}
+}

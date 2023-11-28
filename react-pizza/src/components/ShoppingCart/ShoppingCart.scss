@@ -1,0 +1,9 @@
+.shopping-cart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: 860px) {
+		padding: 0 10px;
+	}
+}

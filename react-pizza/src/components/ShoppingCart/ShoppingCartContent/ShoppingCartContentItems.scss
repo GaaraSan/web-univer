@@ -1,0 +1,37 @@
+@import '../../../assets/scss/general.scss';
+
+.shopping-cart-content {
+	&-items {
+		&-footer {
+			margin-top: 40px;
+			display: flex;
+			justify-content: space-between;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 22px;
+			line-height: 27px;
+			letter-spacing: 0.01em;
+			color: $black;
+
+			@media (max-width: 450px) {
+				row-gap: 20px;
+				column-gap: 100px;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			&-count {
+				&-bold {
+					font-weight: bold;
+				}
+			}
+
+			&-price {
+				&-bold {
+					font-weight: bold;
+					color: $accent;
+				}
+			}
+		}
+	}
+}
